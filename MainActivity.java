@@ -22,18 +22,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent activity2Intent = new Intent(getApplicationContext(), Topics.class);
                 startActivity(activity2Intent);
+                finish();
             }
         });
 
-        DBHelper dbHelper =  new DBHelper(this);
-        dbHelper.insertCategory();
-        dbHelper.insertQuestion();
-
-        ArrayList<String> arrayList = new ArrayList<String>();
-        arrayList = dbHelper.getItemList();
-
-        for (String s: arrayList){
-            Log.d("question", s);
-        }
     }
 }
