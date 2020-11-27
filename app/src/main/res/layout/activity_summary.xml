@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg2"
+    android:padding="15dp"
+    tools:context=".Summary">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+    />
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Congratulations, you've earnd 0 points"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/againButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="146dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/congratsText"
+        android:layout_marginTop="200dp"
+        android:text="Play again"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/bigPoint"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/congratsText"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/point" />
+
+    <ImageView
+        android:id="@+id/smallPoint"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/score"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/point" />
+
+
+</RelativeLayout>
