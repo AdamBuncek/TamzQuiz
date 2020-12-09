@@ -6,3 +6,4 @@
 - zvukové efekty pro správnou/špatnou odpověď
 - animace při načtení aktivity a v momentě kdy se odpočet času dostane pod 10 vteřin
 - možnost pozastavení hry
+https://github.com/AdamBuncek/MyQuiz
