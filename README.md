@@ -1,4 +1,0 @@
-# TamzQuiz
--------------------------------
-Ukládání skore
-Multimédia
